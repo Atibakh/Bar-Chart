@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles file -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- jquery link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS/jQuery file -->
+    <script src="script.js"></script>
+
+    <title>barchart</title>
+  </head>
+  <body>
+    <main id="barchart"></main>
+    <script>
+      $(document).ready(
+        // simple bar chart exampel
+        drawBarChart(
+          [
+            { value: 14, label: "Bar-1" },
+            { value: 7, label: "Bar-2" },
+            { value: 24, label: "Bar-3" },
+            { value: 36, label: "bar-4" },
+            { value: 12, label: "bar-5" },
+            { value: 14, label: "bar-6" },
+          ],
+          {
+            stackedBarChart: false,
+            chartWidth: 100,
+            chartHeight: 30,
+            positionOfValues: "center",
+            colBarValuePosition: "center",
+            barColor: "",
+            barWidth: 7,
+            labelColor: "",
+            barSpacing: "space-around",
+            barChartTitle: "Untitled Bar",
+            titleColor: "",
+            titleSize: 30,
+            colBarColors: ["#006778", "#0093AB", "#00AFC1", "#FFD124"],
+            labelsPerBar: ["A", "B", "C", "D"],
+          },
+
+          "#barchart"
+        )
+
+        /*
+        // stacked barchart example
+        drawBarChart(
+          [
+            { value: [14, 7, 22, 25], label: "Bar-1" },
+            { value: [10, 15, 36, 21], label: "Bar-2" },
+            { value: [19, 5, 29, 12], label: "Bar-3" },
+            { value: [20, 5, 19, 2], label: "Bar-4" },
+            { value: [8, 21, 12, 11], label: "Bar-5" },
+            { value: [3, 17, 14, 21], label: "Bar-6" },
+          ],
+          {
+            stackedBarChart: true,
+            chartWidth: 100,
+            chartHeight: 30,
+            positionOfValues: "center",
+            colBarValuePosition: "center",
+            barColor: "",
+            barWidth: 7,
+            labelColor: "",
+            barSpacing: "space-around",
+            barChartTitle: "Untitled Bar",
+            titleColor: "",
+            titleSize: 30,
+            colBarColors: ["#006778", "#0093AB", "#00AFC1", "#FFD124"],
+            labelsPerBar: ["A", "B", "C", "D"],
+          },
+          "#barchart"
+        
+        */
+      );
+    </script>
+  </body>
+</html>
