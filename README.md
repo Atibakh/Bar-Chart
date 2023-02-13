@@ -10,15 +10,15 @@ Users can set the chart's width and height, adjust the position of the values, c
 ## Screenshots
 
 
-![Simple Bar Chart](/assets/img/simple.png)
+![Simple Bar Chart](/img/simple.png)
 
 
-![Stacked Bar Chart](/assets/img/stacked.png)
+![Stacked Bar Chart](/img/stacked.png)
 
-# Usage
+## Usage
 
 
-## Setup
+### Setup
 
 
 Simply save barchart.js and barchart.css into your project. Place the following lines in your page's <head>:
@@ -37,10 +37,10 @@ Simply save barchart.js and barchart.css into your project. Place the following 
 There are some exampls in the index.html file that commented out, It can be used for your purposes.
   
   
-## Parameters
+### Parameters
   
   
-  ### Data
+  #### Data
   
   
   data must be given as an array of objects, each object representing a single column of data.
@@ -70,7 +70,7 @@ There are some exampls in the index.html file that commented out, It can be used
   Y-axis is automatically generated based on the data given (maximum value)
   
   
-  ### Options
+  #### Options
   
   
   The options object has the following properties:
@@ -121,7 +121,7 @@ There are some exampls in the index.html file that commented out, It can be used
   *```colBarValuePosition```: A string(default: "center") indicating the position of the values for each stack in a bar in a stacked bar char(top, center, bottom).
   
   
-  ### Element
+  #### Element
   Id of the element where the chart will be rendered into ie. element = '#barchart' will render to ```<div id:"barchart"></div>```
   
   
