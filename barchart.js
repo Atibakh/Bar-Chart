@@ -231,17 +231,17 @@ function drawBarChart(data, object, element) {
 // object;
 const options = {
   stackedBarChart: false,
-  chartWidth: 100,
-  chartHeight: 30,
+  chartWidth: "",
+  chartHeight: "",
   positionOfValues: "center",
   colBarValuePosition: "center",
   barColor: "",
-  barWidth: 7,
+  barWidth: "",
   labelColor: "",
   barSpacing: "space-around",
   barChartTitle: "Untitled Bar",
   titleColor: "",
-  titleSize: 30,
+  titleSize: "",
   colBarColors: ["#006778", "#0093AB", "#00AFC1", "#FFD124"],
   labelsPerBar: ["A", "B", "C", "D"],
 };
